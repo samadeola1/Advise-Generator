@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link
+      rel="shortcut icon"
+      href="/assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/tailwindcss">
+      @theme{
+        --color-lightCyan: hsl(193, 38%, 86%);
+        --color-NeonGreen: hsl(150, 100%, 66%);
+        --color-GrayishBlue: hsl(217, 19%, 38%);
+        --color-DarkGrayishBlue: hsl(217, 19%, 24%);
+        --color-DarkBlue: hsl(218, 23%, 16%);
+        --font-manrope: "Manrope";
+      }
+    </style>
+
+    <title>Advice generator</title>
+  </head>
+
+  <body class="bg-DarkBlue">
+    <main
+      class="container mx-auto flex justify-center flex-col items-center min-h-screen"
+    >
+      <section
+        class="border border-DarkGrayishBlue w-90 md:w-130 min-h-fit md:min-h-fit bg-DarkGrayishBlue font-manrope rounded-xl flex flex-col gap-5 relative"
+      >
+        <section class="text-center">
+          <div class="text-NeonGreen pt-10 font-bold">
+            <p class="tracking-[0.5rem]">ADVICE #117</p>
+          </div>
+          <div class="text-lightCyan pt-5 text-[28px] font-bold px-4">
+            <h1 class="">
+              "it is easy to sit up and take notice, what's difficult is getting
+              up and taking action."
+            </h1>
+          </div>
+        </section>
+        <div class="pb-15">
+          <img
+            class="px-10 md:hidden"
+            src="/assets/pattern-divider-mobile.svg"
+            alt="pattern-divider-mobile"
+          />
+          <img
+            class="px-10 hidden md:block"
+            src="/assets/pattern-divider-desktop.svg"
+            alt="pattern-divider-desktop"
+          />
+        </div>
+        <section
+          class="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2"
+        >
+          <button
+            class="bg-NeonGreen w-15 h-15 rounded-full relative cursor-pointer transition-all duration-300 hover:shadow-[0_0_10px_5px_#51FFA8]"
+          >
+            <img
+              class="absolute right-4.5 bottom-4.5"
+              src="/assets/icon-dice.svg"
+              alt="icon-dice"
+            />
+          </button>
+        </section>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
