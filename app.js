@@ -4,7 +4,7 @@ let adviceID = document.querySelector("p");
 let adviceText = document.querySelector("h1");
 let btn = document.querySelector("button");
 
-async function getAdvice() {
+async function getAdvice(){
   try {
     let req = await fetch("https://api.adviceslip.com/advice");
     let res = await req.json();
